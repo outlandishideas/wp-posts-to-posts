@@ -4,6 +4,7 @@
     "homepage": "https://github.com/outlandishideas/wp-posts-to-posts",
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
+    "version": "1.6.6",
     "require": {
         "composer/installers": "~1.0",
         "outlandish/lib-posts-to-posts": "dev-master",
