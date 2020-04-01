@@ -1,18 +1,22 @@
 {
-    "name": "scribu/posts-to-posts",
+    "name": "outlandish/posts-to-posts",
     "type": "wordpress-plugin",
-    "homepage": "http://wordpress.org/plugins/posts-to-posts",
+    "homepage": "https://github.com/outlandishideas/wp-posts-to-posts",
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
     "require": {
         "composer/installers": "~1.0",
-        "scribu/lib-posts-to-posts": "dev-master",
+        "outlandish/lib-posts-to-posts": "dev-master",
         "mustache/mustache": "~2.6"
     },
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/scribu/wp-lib-posts-to-posts"
+            "url": "https://github.com/outlandishideas/wp-lib-posts-to-posts"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/outlandishideas/wp-scb-framework"
         }
     ]
 }

@@ -1,25 +1,27 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "8f74c4809c15b7242bbc0af3abd9be8c",
-    "content-hash": "890f94502537419ad4bc49ec48920fe8",
+    "content-hash": "bc413972713ec182576a7a45ec8c200d",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "dev-master",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41"
+                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41",
-                "reference": "e420b539e8d7b38b7c6f3f99dccc0386bd3dfe41",
+                "url": "https://api.github.com/repos/composer/installers/zipball/7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
+                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
                 "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -27,18 +29,18 @@
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "4.1.*"
+                "phpunit/phpunit": "^4.8.36"
             },
-            "type": "composer-installer",
+            "type": "composer-plugin",
             "extra": {
-                "class": "Composer\\Installers\\Installer",
+                "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
                     "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Composer\\Installers\\": "src/"
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -53,75 +55,101 @@
                 }
             ],
             "description": "A multi-framework Composer library installer",
-            "homepage": "http://composer.github.com/installers/",
+            "homepage": "https://composer.github.io/installers/",
             "keywords": [
                 "Craft",
                 "Dolibarr",
+                "Eliasis",
                 "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
                 "MODX Evo",
+                "MantisBT",
+                "Mautic",
+                "Maya",
                 "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
                 "SMF",
                 "Thelia",
+                "Whmcs",
                 "WolfCMS",
                 "agl",
                 "aimeos",
                 "annotatecms",
+                "attogram",
                 "bitrix",
                 "cakephp",
                 "chef",
+                "cockpit",
                 "codeigniter",
                 "concrete5",
                 "croogo",
                 "dokuwiki",
                 "drupal",
+                "eZ Platform",
                 "elgg",
+                "expressionengine",
                 "fuelphp",
                 "grav",
                 "installer",
+                "itop",
                 "joomla",
+                "known",
                 "kohana",
                 "laravel",
+                "lavalite",
                 "lithium",
                 "magento",
+                "majima",
                 "mako",
                 "mediawiki",
                 "modulework",
+                "modx",
                 "moodle",
+                "osclass",
                 "phpbb",
                 "piwik",
                 "ppi",
                 "puppet",
+                "pxcms",
+                "reindex",
                 "roundcube",
                 "shopware",
                 "silverstripe",
+                "sydes",
+                "sylius",
                 "symfony",
                 "typo3",
                 "wordpress",
+                "yawik",
                 "zend",
                 "zikula"
             ],
-            "time": "2015-06-13 15:30:38"
+            "time": "2020-02-07T10:39:20+00:00"
         },
         {
             "name": "mustache/mustache",
-            "version": "v2.9.0",
+            "version": "v2.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/mustache.php.git",
-                "reference": "c745b01956caf27d26b55a72a90aff56bc169cd6"
+                "reference": "e95c5a008c23d3151d59ea72484d4f72049ab7f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/c745b01956caf27d26b55a72a90aff56bc169cd6",
-                "reference": "c745b01956caf27d26b55a72a90aff56bc169cd6",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/e95c5a008c23d3151d59ea72484d4f72049ab7f4",
+                "reference": "e95c5a008c23d3151d59ea72484d4f72049ab7f4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
             "require-dev": {
-                "fabpot/php-cs-fixer": "~1.6",
-                "phpunit/phpunit": "~3.7|~4.0"
+                "friendsofphp/php-cs-fixer": "~1.11",
+                "phpunit/phpunit": "~3.7|~4.0|~5.0"
             },
             "type": "library",
             "autoload": {
@@ -146,24 +174,24 @@
                 "mustache",
                 "templating"
             ],
-            "time": "2015-08-15 19:23:13"
+            "time": "2019-11-23T21:40:31+00:00"
         },
         {
-            "name": "scribu/lib-posts-to-posts",
+            "name": "outlandish/lib-posts-to-posts",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/scribu/wp-lib-posts-to-posts.git",
-                "reference": "baefe121458b5d4d333b29e0c0b8cb8fad0fa4a2"
+                "url": "https://github.com/outlandishideas/wp-lib-posts-to-posts.git",
+                "reference": "21e9d6f660abc1887639765d06f7c2166f0d84d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scribu/wp-lib-posts-to-posts/zipball/baefe121458b5d4d333b29e0c0b8cb8fad0fa4a2",
-                "reference": "baefe121458b5d4d333b29e0c0b8cb8fad0fa4a2",
+                "url": "https://api.github.com/repos/outlandishideas/wp-lib-posts-to-posts/zipball/21e9d6f660abc1887639765d06f7c2166f0d84d3",
+                "reference": "21e9d6f660abc1887639765d06f7c2166f0d84d3",
                 "shasum": ""
             },
             "require": {
-                "scribu/scb-framework": "dev-master"
+                "outlandish/scb-framework": "dev-master"
             },
             "type": "library",
             "autoload": {
@@ -175,24 +203,24 @@
                 "GPL-2.0+"
             ],
             "description": "A library for many-to-many relationships in WordPress",
-            "homepage": "https://github.com/scribu/wp-lib-posts-to-posts",
+            "homepage": "https://github.com/outlandishideas/wp-lib-posts-to-posts",
             "support": {
-                "source": "https://github.com/scribu/wp-lib-posts-to-posts/tree/master"
+                "source": "https://github.com/outlandishideas/wp-lib-posts-to-posts/tree/master"
             },
-            "time": "2015-08-19 09:04:19"
+            "time": "2020-04-01T14:42:04+00:00"
         },
         {
-            "name": "scribu/scb-framework",
+            "name": "outlandish/scb-framework",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/scribu/wp-scb-framework.git",
-                "reference": "e766eda522230858d1c6a3928d3b12da643cb690"
+                "url": "https://github.com/outlandishideas/wp-scb-framework.git",
+                "reference": "6484bff26f0f005ed157ec1f212436c29c9ab4d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scribu/wp-scb-framework/zipball/e766eda522230858d1c6a3928d3b12da643cb690",
-                "reference": "e766eda522230858d1c6a3928d3b12da643cb690",
+                "url": "https://api.github.com/repos/outlandishideas/wp-scb-framework/zipball/6484bff26f0f005ed157ec1f212436c29c9ab4d3",
+                "reference": "6484bff26f0f005ed157ec1f212436c29c9ab4d3",
                 "shasum": ""
             },
             "type": "library",
@@ -205,7 +233,6 @@
                     "Util.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0+"
             ],
@@ -213,6 +240,10 @@
                 {
                     "name": "Cristi Burcă",
                     "homepage": "http://scribu.net/"
+                },
+                {
+                    "name": "Outlandish Co-operative",
+                    "homepage": "https://outlandish.com/"
                 }
             ],
             "description": "A set of useful classes for faster plugin development",
@@ -220,14 +251,19 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-05-11 17:14:48"
+            "support": {
+                "issues": "https://github.com/outlandishideas/wp-scb-framework/issues",
+                "source": "https://github.com/outlandishideas/wp-scb-framework",
+                "wiki": "https://github.com/outlandishideas/wp-scb-framework/wiki"
+            },
+            "time": "2020-04-01T14:38:41+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "scribu/lib-posts-to-posts": 20
+        "outlandish/lib-posts-to-posts": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
