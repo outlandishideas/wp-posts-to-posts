@@ -4,32 +4,35 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c491118d738c69816b536d62d95053ca",
+    "content-hash": "4a8fe3c3584f543d3403e32347b367a0",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.8.0",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3"
+                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
-                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
+                "url": "https://api.github.com/repos/composer/installers/zipball/b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
+                "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0"
+                "composer-plugin-api": "^1.0 || ^2.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
-                "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "^4.8.36"
+                "composer/composer": "1.6.* || 2.0.*@dev",
+                "composer/semver": "1.0.* || 2.0.*@dev",
+                "phpunit/phpunit": "^4.8.36",
+                "sebastian/comparator": "^1.2.4",
+                "symfony/process": "^2.3"
             },
             "type": "composer-plugin",
             "extra": {
@@ -128,7 +131,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2020-02-07T10:39:20+00:00"
+            "time": "2020-04-07T06:57:05+00:00"
         },
         {
             "name": "mustache/mustache",
@@ -178,20 +181,20 @@
         },
         {
             "name": "outlandish/lib-posts-to-posts",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/outlandishideas/wp-lib-posts-to-posts.git",
-                "reference": "21e9d6f660abc1887639765d06f7c2166f0d84d3"
+                "reference": "6468fc6425fbf62bd082599c154fc6707e9960f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/outlandishideas/wp-lib-posts-to-posts/zipball/21e9d6f660abc1887639765d06f7c2166f0d84d3",
-                "reference": "21e9d6f660abc1887639765d06f7c2166f0d84d3",
+                "url": "https://api.github.com/repos/outlandishideas/wp-lib-posts-to-posts/zipball/6468fc6425fbf62bd082599c154fc6707e9960f8",
+                "reference": "6468fc6425fbf62bd082599c154fc6707e9960f8",
                 "shasum": ""
             },
             "require": {
-                "outlandish/scb-framework": "dev-master"
+                "outlandish/scb-framework": "1.0"
             },
             "type": "library",
             "autoload": {
@@ -205,22 +208,22 @@
             "description": "A library for many-to-many relationships in WordPress",
             "homepage": "https://github.com/outlandishideas/wp-lib-posts-to-posts",
             "support": {
-                "source": "https://github.com/outlandishideas/wp-lib-posts-to-posts/tree/master"
+                "source": "https://github.com/outlandishideas/wp-lib-posts-to-posts/tree/1.0"
             },
-            "time": "2020-04-01T14:42:04+00:00"
+            "time": "2020-04-16T17:19:36+00:00"
         },
         {
             "name": "outlandish/scb-framework",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/outlandishideas/wp-scb-framework.git",
-                "reference": "6484bff26f0f005ed157ec1f212436c29c9ab4d3"
+                "reference": "f1f91e49f27012593e3ad1968de53e3d7ace2322"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/outlandishideas/wp-scb-framework/zipball/6484bff26f0f005ed157ec1f212436c29c9ab4d3",
-                "reference": "6484bff26f0f005ed157ec1f212436c29c9ab4d3",
+                "url": "https://api.github.com/repos/outlandishideas/wp-scb-framework/zipball/f1f91e49f27012593e3ad1968de53e3d7ace2322",
+                "reference": "f1f91e49f27012593e3ad1968de53e3d7ace2322",
                 "shasum": ""
             },
             "type": "library",
@@ -256,15 +259,13 @@
                 "source": "https://github.com/outlandishideas/wp-scb-framework",
                 "wiki": "https://github.com/outlandishideas/wp-scb-framework/wiki"
             },
-            "time": "2020-04-01T14:38:41+00:00"
+            "time": "2020-04-16T17:20:24+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "outlandish/lib-posts-to-posts": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

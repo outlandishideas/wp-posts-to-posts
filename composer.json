@@ -7,7 +7,7 @@
     "version": "1.6.6.1",
     "require": {
         "composer/installers": "~1.0",
-        "outlandish/lib-posts-to-posts": "dev-master",
+        "outlandish/lib-posts-to-posts": "1.0",
         "mustache/mustache": "~2.6"
     },
     "repositories": [
