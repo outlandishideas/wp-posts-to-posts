@@ -4,20 +4,10 @@
     "homepage": "https://github.com/outlandishideas/wp-posts-to-posts",
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
-    "version": "1.6.6.1",
+    "version": "1.6.6.2",
     "require": {
         "composer/installers": "~1.0",
         "outlandish/lib-posts-to-posts": "1.0",
         "mustache/mustache": "~2.6"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/outlandishideas/wp-lib-posts-to-posts"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/outlandishideas/wp-scb-framework"
-        }
-    ]
+    }
 }
